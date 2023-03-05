@@ -1,0 +1,92 @@
+
+<div class = "gradient-custom ">
+    <div>
+        <section class=" px-4 py-5 " style="border-radius: .5rem .5rem 0 0;  height: 2000px; width:50%; margin:auto;">
+      
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-6">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+  
+                <div class="mb-md-5 mt-md-4 pb-5">
+  
+                  <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                  <!-- <p class="text-white-50 mb-5 font.size" style="font-size:30px">Please enter your login and password!</p> -->
+                  <form (ngSubmit)="onSubmit()">
+                    <div class="form-group form-outline form-white mb-4 " style="margin-top:120px">
+                        <input type="text" class="form-control" id="loginUsername" [(ngModel)]="loginInfo.username"
+                            name="username">
+                        <label> Username</label>
+                    </div>
+
+                    <div class="form-group form-outline form-white mb-4 " style="margin-top:50px">
+                        <input type="password" class="form-control" id="loginPassword" [(ngModel)]="loginInfo.password"
+                            name="password">
+                        <label> Password</label>
+                    </div>
+
+                    <table style="margin:auto;">
+                        <tr>
+                            <td><button class="btn btn-success btn-outline-light btn-lg px-5" type="submit">Login</button></td>
+                            <td><button class="btn btn-success btn-outline-light btn-lg px-5" (click)="toSignup()">Signup</button></td>
+                        </tr>
+                    </table>
+                </form>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+     
+    </div>
+</div>
+
+
+
+
+
+    
+    
+    
+
+
+<!-- <table>
+    <tr>
+        <td>
+
+
+            <div class="myForm">
+                <h3> Login </h3>
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Username</label>
+                        <input type="text" class="form-control" id="loginUsername" [(ngModel)]="loginInfo.username"
+                            name="username">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Password</label>
+                        <input type="password" class="form-control" id="loginPassword" [(ngModel)]="loginInfo.password"
+                            name="password">
+                    </div>
+
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </td>
+        <td></td>
+        <td><div class="myForm"><app-registration></app-registration></div></td>
+    </tr>
+</table>
+<div>
+    <form (ngSubmit)="onSubmit2()" *ngIf="isLoggedIn()">
+        <button class="btn btn-success" type="submit">Fire Test</button>
+    </form>
+</div> -->

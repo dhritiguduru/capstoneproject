@@ -1,0 +1,33 @@
+<div>
+    <div *ngIf="displayAnswerImage"><img [src]="imageToShow" alt="../../assets/src_imgs/R.png"></div>
+    <div class="answerDisplay" *ngIf="displayAnswers">
+        <table *ngFor="let answer of answers">
+            <tr *ngIf="answer.status">
+                <!-- <td><img [src] = "imageToShow[i]"/></td> -->
+                <td>Answer: {{answer.description_answer}}</td>
+                <td>from:{{answer.created_by}}</td>
+                <td><button (click)="getImage(answer.img_src)">See Image</button></td>
+            </tr>
+        </table>
+    </div>
+    <h5 style="color: aliceblue;">Submit your own answer:</h5>
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label style="color: aliceblue;"> Create Answer</label>
+            <textarea class="form-control" id="createanswer" [(ngModel)]="answerRequest.description_answer"
+                name="createanswer"></textarea>
+            <app-fileuploadcomponent (newFileUploadEvent)="save($event)"></app-fileuploadcomponent>
+        </div>
+        <div>
+            <p style="color: aliceblue;">Submitting as: {{userName}}</p>
+        </div>
+
+
+        <button class="btn btn-success" type="submit">Submit Answer
+
+        </button>
+
+    </form>
+
+</div>

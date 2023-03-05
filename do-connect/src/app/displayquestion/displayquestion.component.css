@@ -1,0 +1,51 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    
+    height: 100vh;
+    width: 100%;
+    background: #6a11cb;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    
+  }
+
+  .questionBody {
+    background-color: rgb(43, 40, 40);
+    margin-bottom: 100px;
+    width: 60%; 
+    border-style: solid; 
+    margin: auto;
+    height: 100%;
+  }
+
+.questionDisplay{
+    margin-top: 150px; 
+    margin:auto;
+    border-width: 5px;
+    border-color: black;
+    width:60%;
+    background-color: white;
+}
+.answerDisplay{
+    vertical-align: center;
+    margin:auto;
+    width:60%;
+    border: 5px;
+    outline-style: dotted;
+}
+.createAnswer{
+    width:60%;
+    margin:auto;
+}
+h1{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+
